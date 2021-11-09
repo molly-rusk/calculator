@@ -19,27 +19,31 @@ reader.question("What would you like to calculate?", function(input)
 	console.log('num1', num1);
 	console.log('num2', num2);
 
-	if(mathSymbol === "+"){
+	if(mathSymbol === "+"){   //Addition
 		console.log(num1 +num2);
 		}
 
-	else if(mathSymbol === '-'){
+	else if(mathSymbol === '-'){ //Subtraction
 		console.log(num1-num2);
 		}
 
-	else if(mathSymbol === '*'){
+	else if(mathSymbol === '*'){ //Multiplication
 		console.log(num1 * num2);
 		}
 
-	else if(mathSymbol === '/'){
+	else if(mathSymbol === '/'){ //Division
 		console.log(num1 / num2);
 		}
 	
-	else if(mathSymbol === '!'){
+	else if(mathSymbol === '!'){ //Square root
 		let x = Math.sqrt(num1);
 		console.log(x);
 	}
 	
+	else if(mathSymbol === '@'){ // num1 to the power of num2
+		let x = Math.pow(num1, num2);
+		console.log(x);
+	}
 	
 
 	// This line closes the connection to the command line interface.
