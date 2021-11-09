@@ -38,13 +38,17 @@ reader.question("What would you like to calculate?", function(input)
 	else if(mathSymbol === '!'){ //Square root
 		let x = Math.sqrt(num1);
 		console.log(x);
-	}
+		}
 	
 	else if(mathSymbol === '@'){ // num1 to the power of num2
 		let x = Math.pow(num1, num2);
 		console.log(x);
+		}
+
+	else if(mathSymbol === '%'){ //Modulus
+		console.log(num1 % num2);
+
 	}
-	
 
 	// This line closes the connection to the command line interface.
 	
