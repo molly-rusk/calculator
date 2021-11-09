@@ -5,7 +5,13 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-
+console.log("Type a '+' to add");
+console.log("Type a '-' to subtract");
+console.log("Type a '*' to multiply");
+console.log("Type a '/' to divide");
+console.log("Type a '!' to square root");
+console.log("Type a '@' to get the first number input to the power of the second input");
+console.log("Type a '%' to get a modulus");
 
 reader.question("What would you like to calculate?", function(input)
 {
